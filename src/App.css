@@ -25,10 +25,6 @@ body{
   padding-bottom: 40px;
 } 
 
-.vert_menu {
-
-}
-
 img.aside
 {
   width:100%;
@@ -95,6 +91,7 @@ h6 {
   align-items: right;
   text-align: right;
   position: relative;
+  font-size: 95%;
   line-height: 2;
 }
 
@@ -140,6 +137,13 @@ ul {
 
 button:hover {
   cursor: pointer;
+}
+
+button.navigation{
+  background-color: #81C3F6;
+  font-weight: bold;
+  font-size:medium;
+  border: 0;
 }
 
 .foot-container {

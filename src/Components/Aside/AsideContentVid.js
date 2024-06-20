@@ -1,0 +1,15 @@
+import React from "react";
+import Video from "./Video";
+
+function AsideContentVid({contentid, title, vidurl, text1, text2} ) {
+  
+    return (
+        <div id={contentid} className="asideContent">
+            <h3>{title}</h3>
+            <Video vidurl={vidurl}/>
+            <p>{text1}</p>
+            <p>{text2}</p>
+        </div>
+        )
+    }
+    export default AsideContentVid;
