@@ -1,54 +1,30 @@
 import React from "react";
-
+const AsideElementIds = ['asideImg', 'whereNext', 'favBoards', 'trainingTips', 'monthlyPup', 'mayRecap', 'upcomingEvents', 'updatesAndNews', 'meetOurChampions', 'historyOfDogSurfing']; 
 
 function opennavEvents(event){
-    document.getElementById('asideImg').style.display='none';
-    document.getElementById('whereNext').style.display='none';
-    document.getElementById('favBoards').style.display='none';
-    document.getElementById('trainingTips').style.display='none';
-    document.getElementById('monthlyPup').style.display='none';
-    document.getElementById('mayRecap').style.display='none';  
-    document.getElementById('upcomingEvents').style.display='block';  
-    document.getElementById('updatesAndNews').style.display='none';    
-    document.getElementById('meetOurChampions').style.display='none';    
-    document.getElementById('historyOfDogSurfing').style.display='none';    
+  AsideElementIds.forEach((element) => {
+    document.getElementById(element).style.display='none';
+  });   
+  document.getElementById('upcomingEvents').style.display='block';   
 
 }
 function opennavUpdates(event){
-  document.getElementById('asideImg').style.display='none';
-    document.getElementById('whereNext').style.display='none';
-    document.getElementById('favBoards').style.display='none';
-    document.getElementById('trainingTips').style.display='none';
-    document.getElementById('monthlyPup').style.display='none';
-    document.getElementById('mayRecap').style.display='none';
-    document.getElementById('upcomingEvents').style.display='none';  
-    document.getElementById('updatesAndNews').style.display='block';    
-    document.getElementById('meetOurChampions').style.display='none';    
-    document.getElementById('historyOfDogSurfing').style.display='none';    
+  AsideElementIds.forEach((element) => {
+    document.getElementById(element).style.display='none';
+  });   
+  document.getElementById('updatesAndNews').style.display='block';
 }
 function opennavMeet(event){
-  document.getElementById('asideImg').style.display='none';
-    document.getElementById('whereNext').style.display='none';
-    document.getElementById('favBoards').style.display='none';
-    document.getElementById('trainingTips').style.display='none';
-    document.getElementById('monthlyPup').style.display='none';
-    document.getElementById('mayRecap').style.display='none';
-    document.getElementById('upcomingEvents').style.display='none';  
-    document.getElementById('updatesAndNews').style.display='none';    
-    document.getElementById('meetOurChampions').style.display='block';    
-    document.getElementById('historyOfDogSurfing').style.display='none';   
+  AsideElementIds.forEach((element) => {
+    document.getElementById(element).style.display='none';
+  });   
+  document.getElementById('meetOurChampions').style.display='block'; 
 }
 function opennavHistory(event){
-  document.getElementById('asideImg').style.display='none';
-    document.getElementById('whereNext').style.display='none';
-    document.getElementById('favBoards').style.display='none';
-    document.getElementById('trainingTips').style.display='none';
-    document.getElementById('monthlyPup').style.display='none';
-    document.getElementById('mayRecap').style.display='none';  
-    document.getElementById('upcomingEvents').style.display='none';  
-    document.getElementById('updatesAndNews').style.display='none';    
-    document.getElementById('meetOurChampions').style.display='none';    
-    document.getElementById('historyOfDogSurfing').style.display='block';   
+  AsideElementIds.forEach((element) => {
+    document.getElementById(element).style.display='none';
+  });   
+  document.getElementById('historyOfDogSurfing').style.display='block';   
 }
 
 const Navigation = () => {

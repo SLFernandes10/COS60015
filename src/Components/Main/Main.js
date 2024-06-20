@@ -3,7 +3,7 @@ import NewsCarousel from "./NewsCarousel";
 import PupOfMonth from "./PupOfMonth";
 import Training from "./Training";
 
-const Main = () => { 
+const Main = (AsideElementIds) => { 
     return (
       <div>
         <NewsCarousel />

@@ -1,14 +1,14 @@
 import React from 'react';
 
+const AsideElementIds = ['asideImg', 'whereNext', 'favBoards', 'trainingTips', 'monthlyPup', 'mayRecap', 'upcomingEvents', 'updatesAndNews', 'meetOurChampions', 'historyOfDogSurfing']; 
+
 function PupOfMonth () {
 
     function openPupofMonthText(event) {
-        document.getElementById('asideImg').style.display='none';
-        document.getElementById('whereNext').style.display='none';
-        document.getElementById('favBoards').style.display='none';
-        document.getElementById('trainingTips').style.display='none';
-        document.getElementById('monthlyPup').style.display='block';
-        document.getElementById('mayRecap').style.display='none';
+        AsideElementIds.forEach((element) => {
+            document.getElementById(element).style.display='none';
+          });   
+          document.getElementById('monthlyPup').style.display='block';
     }
 
     return (
