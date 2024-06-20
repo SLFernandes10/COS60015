@@ -1,8 +1,57 @@
 import React from "react";
 
+
+function opennavEvents(event){
+    document.getElementById('asideImg').style.display='none';
+    document.getElementById('whereNext').style.display='none';
+    document.getElementById('favBoards').style.display='none';
+    document.getElementById('trainingTips').style.display='none';
+    document.getElementById('monthlyPup').style.display='none';
+    document.getElementById('mayRecap').style.display='none';  
+    document.getElementById('upcomingEvents').style.display='block';  
+    document.getElementById('updatesAndNews').style.display='none';    
+    document.getElementById('meetOurChampions').style.display='none';    
+    document.getElementById('historyOfDogSurfing').style.display='none';    
+
+}
+function opennavUpdates(event){
+  document.getElementById('asideImg').style.display='none';
+    document.getElementById('whereNext').style.display='none';
+    document.getElementById('favBoards').style.display='none';
+    document.getElementById('trainingTips').style.display='none';
+    document.getElementById('monthlyPup').style.display='none';
+    document.getElementById('mayRecap').style.display='none';
+    document.getElementById('upcomingEvents').style.display='none';  
+    document.getElementById('updatesAndNews').style.display='block';    
+    document.getElementById('meetOurChampions').style.display='none';    
+    document.getElementById('historyOfDogSurfing').style.display='none';    
+}
+function opennavMeet(event){
+  document.getElementById('asideImg').style.display='none';
+    document.getElementById('whereNext').style.display='none';
+    document.getElementById('favBoards').style.display='none';
+    document.getElementById('trainingTips').style.display='none';
+    document.getElementById('monthlyPup').style.display='none';
+    document.getElementById('mayRecap').style.display='none';
+    document.getElementById('upcomingEvents').style.display='none';  
+    document.getElementById('updatesAndNews').style.display='none';    
+    document.getElementById('meetOurChampions').style.display='block';    
+    document.getElementById('historyOfDogSurfing').style.display='none';   
+}
+function opennavHistory(event){
+  document.getElementById('asideImg').style.display='none';
+    document.getElementById('whereNext').style.display='none';
+    document.getElementById('favBoards').style.display='none';
+    document.getElementById('trainingTips').style.display='none';
+    document.getElementById('monthlyPup').style.display='none';
+    document.getElementById('mayRecap').style.display='none';  
+    document.getElementById('upcomingEvents').style.display='none';  
+    document.getElementById('updatesAndNews').style.display='none';    
+    document.getElementById('meetOurChampions').style.display='none';    
+    document.getElementById('historyOfDogSurfing').style.display='block';   
+}
+
 const Navigation = () => {
-  const navItems = ["Upcoming Events", "Updates and News", "Meet Our Champions", "History of Dog Surfing"];
-  const navList = navItems.map((nav,index) => <li key={index}><a href="">{nav}</a></li>);
   return (
     <div className="navigation">
       <div>
@@ -10,7 +59,12 @@ const Navigation = () => {
         <input type="text" placeholder="Search" />
         <button type="submit" className="searchbtn"><img src="/images/mag.png" height="20px" /></button>
       </form>
-      <ul>{navList}</ul>
+      <ul>
+      <li><button className="button navigation" onClick={opennavEvents}>Upcoming Events</button></li>
+      <li><button className="button navigation" onClick={opennavUpdates}>Updates and News</button></li>
+      <li><button className="button navigation" onClick={opennavMeet}>Meet Our Champions</button></li>
+      <li><button className="button navigation" onClick={opennavHistory}>History of Dog Surfing</button></li>
+      </ul>
     </div>
     <div className="sponsers">
       <p>Thanks to our sponsors!</p>

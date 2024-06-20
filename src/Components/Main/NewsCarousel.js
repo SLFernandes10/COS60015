@@ -10,7 +10,12 @@ function NewsCarousel() {
     document.getElementById('favBoards').style.display='none';
     document.getElementById('trainingTips').style.display='none';
     document.getElementById('monthlyPup').style.display='none';
-    document.getElementById('mayRecap').style.display='block';    
+    document.getElementById('mayRecap').style.display='block';
+    document.getElementById('upcomingEvents').style.display='none';  
+    document.getElementById('updatesAndNews').style.display='none';    
+    document.getElementById('meetOurChampions').style.display='none';    
+    document.getElementById('historyOfDogSurfing').style.display='none';     
+    
   }
 
   function openNews2(event) {
@@ -20,6 +25,10 @@ function NewsCarousel() {
     document.getElementById('trainingTips').style.display='none';
     document.getElementById('monthlyPup').style.display='none';
     document.getElementById('mayRecap').style.display='none';
+    document.getElementById('upcomingEvents').style.display='none';  
+    document.getElementById('updatesAndNews').style.display='none';    
+    document.getElementById('meetOurChampions').style.display='none';    
+    document.getElementById('historyOfDogSurfing').style.display='none';   
   }
 
   function openNews3(event) {
@@ -29,6 +38,10 @@ function NewsCarousel() {
     document.getElementById('trainingTips').style.display='none';
     document.getElementById('monthlyPup').style.display='none';
     document.getElementById('mayRecap').style.display='none';
+    document.getElementById('upcomingEvents').style.display='none';  
+    document.getElementById('updatesAndNews').style.display='none';    
+    document.getElementById('meetOurChampions').style.display='none';    
+    document.getElementById('historyOfDogSurfing').style.display='none';   
   }
 
     return (
