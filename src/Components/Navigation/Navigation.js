@@ -44,7 +44,7 @@ const Navigation = () => {
     </div>
     <div className="sponsers">
       <p>Thanks to our sponsors!</p>
-      <img src="./images/petbarn.jpg" height="40px" /><br />
+      <img src="./images/Petbarn.jpg" height="40px" /><br />
       <img src="./images/chewylogo.png" height="40px" /> <br />
       <img src="./images/purina-logo-square-2023.png" height="35px" /> 
     </div>
