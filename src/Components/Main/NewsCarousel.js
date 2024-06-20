@@ -32,17 +32,17 @@ function NewsCarousel() {
       <div className="column_pics">
           <Carousel useKeyboardArrows={true} showThumbs={false} showIndicators={false}>
           <div className="column_pics">
-            <button onClick={openNews1}><img src="/images/download.jpg"/></button>
+            <button onClick={openNews1}><img src="./images/download.jpg"/></button>
               <div className="bg"></div>
               <h6>May Recap</h6>
             </div>
             <div className="column_pics">
-              <button onClick={openNews2}><img src="/images/Beach_at_Fort_Lauderdale.jpg"/></button>
+              <button onClick={openNews2}><img src="./images/Beach_at_Fort_Lauderdale.jpg"/></button>
               <div className="bg"></div>
               <h6>Where to Next?</h6>
             </div>
             <div className="column_pics">
-              <button onClick={openNews3}><img src="/images/surfboards.jpg"/></button>
+              <button onClick={openNews3}><img src="./images/surfboards.jpg"/></button>
               <div className="bg"></div>
               <h6>Our Favorite Boards</h6>
             </div>

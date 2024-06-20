@@ -13,7 +13,7 @@ function PupOfMonth () {
 
     return (
         <div className="column_pics">
-            <button className="button pup" onClick={openPupofMonthText}><img className="img pup" src="/images/download (1).jpg"/></button>
+            <button className="button pup" onClick={openPupofMonthText}><img className="img pup" src="./images/download (1).jpg"/></button>
             <div className="bg"></div>
             <h6>Pup of the Month</h6>
         </div>

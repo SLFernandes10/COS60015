@@ -12,7 +12,7 @@ function Training() {
     }
     return (
         <div className="column_pics">
-            <button className="button training" onClick={openTrainingTips}><img className="img training" src="/images/download (2).jpg"/></button>
+            <button className="button training" onClick={openTrainingTips}><img className="img training" src="./images/download (2).jpg"/></button>
             <div className="bg"></div>
             <h6>Training Tips</h6>
         </div>

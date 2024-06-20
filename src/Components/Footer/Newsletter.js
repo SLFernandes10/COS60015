@@ -21,7 +21,7 @@ function Newsletter() {
 
   return (
     <div className="newsletter">
-    <button className="navbtn" id="register-button" onClick={openRegForm}><img src="images/envelope.png" height="50px" /></button>
+    <button className="navbtn" id="register-button" onClick={openRegForm}><img src="./images/envelope.png" height="50px" /></button>
         <p id="regtext"> Never miss an update! Sign-up for our monthly newsletter to receive updates on competitions, champions, and more!</p>
         <div class="form" id="pop-up-form">
             <h1>Newsletter Sign-Up</h1>
