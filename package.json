@@ -42,5 +42,10 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/node/axios.cjs"
+    }
   }
 }
