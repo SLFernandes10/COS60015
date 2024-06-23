@@ -1,11 +1,13 @@
 import React from "react";
 
-function Video({vidurl}){
+function Video({youtubeID}){
     
 return(
-    <video id="myVideo" controls>
-        <source src={vidurl}/>
-    </video>
+    <iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${youtubeID}?autoplay=0`}>
+    </iframe>
 )
 }
 
